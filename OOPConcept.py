@@ -16,4 +16,7 @@ print(misty)
 print(rocky)
 print(misty.age)
 print(rocky.breed)
+print(misty.species)
+print(rocky.species)
+
 print(misty == rocky )                                                # two different objects (False)
