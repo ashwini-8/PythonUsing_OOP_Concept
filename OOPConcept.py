@@ -33,3 +33,6 @@ print(rocky)
 print(jeo)
 sound = misty.speak("woof woof")
 print(sound)
+
+print(type(misty))
+print(isinstance(jeo , Dog))
