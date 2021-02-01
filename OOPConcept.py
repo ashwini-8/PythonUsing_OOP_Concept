@@ -9,7 +9,7 @@ class Dog:                                           # creating dog class
         self.breed = breed
         self.color = color
 
-    def printAge(self):                               # instance method
+    def __str__(self):                              # instance method
         return f"{self.name} is {self.age} years old"
 
     def speak(self, sound):
