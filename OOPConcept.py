@@ -14,7 +14,8 @@ class Dog:                                           # creating dog class
         return f"{self.name} says {sound}"
 
 class JackRussellTerrier(Dog):
-    pass
+    def speak(self, sound="Arf"):
+        return f"{self.name} says {sound}"
 
 class Dachshund(Dog):
     pass
@@ -27,12 +28,9 @@ misty = JackRussellTerrier("misty", 9)                                 # object 
 rocky = Dachshund("rocky", 6)
 jeo = Bulldog("jeo", 3)
 
+print(misty.speak("bhow bhow"))
+print(misty.speak())
 
-print(misty)
-print(rocky)
-print(jeo)
-sound = misty.speak("woof woof")
-print(sound)
 
 print(type(misty))
-print(isinstance(jeo , Dog))
+print(isinstance(jeo, Dachshund))
