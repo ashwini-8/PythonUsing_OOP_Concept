@@ -10,13 +10,19 @@ class Dog:                                           # creating dog class
         self.color = color
 
     def printAge(self):                               # instance method
-        print(f"{self.name} is {self.age} years old" )
+        return f"{self.name} is {self.age} years old"
+
+    def speak(self, sound):
+        return f"{self.name} says {sound}"
 
 
 
 misty = Dog("misty", 9, "Havanese", "white")                                 # object creation
 rocky = Dog("rocky", 6, "German Shepherd", "brown")                          # object creation
 
-misty.printAge()
+age = misty.printAge()
+print(age)
+speaking =rocky.speak("bhow bhow")
+print(speaking)
 
 print(misty == rocky )                                                # two different objects (False)
