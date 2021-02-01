@@ -6,7 +6,13 @@ class Car:
     def __str__(self):
         return f"{self.color} has {self.mileage} miiles "
 
-Creta = Car("blue" , 20000 )
-swift = Car("red" , 30000 )
+
+Creta = Car(color = "blue" , mileage = 20000 )
+swift = Car( color= "red" , mileage= 30000 )
+
+for car in (Creta,swift):                     # second approach
+    print(f"{car.color} has {car.mileage} miiles")
+
 print(Creta.__str__())
 print(swift.__str__())
+
