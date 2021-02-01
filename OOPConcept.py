@@ -9,14 +9,14 @@ class Dog:                                           # creating dog class
         self.breed = breed
         self.color = color
 
+    def printAge(self):                               # instance method
+        print(f"{self.name} is {self.age} years old" )
+
+
 
 misty = Dog("misty", 9, "Havanese", "white")                                 # object creation
 rocky = Dog("rocky", 6, "German Shepherd", "brown")                          # object creation
-print(misty)
-print(rocky)
-print(misty.age)
-print(rocky.breed)
-print(misty.species)
-print(rocky.species)
+
+misty.printAge()
 
 print(misty == rocky )                                                # two different objects (False)
