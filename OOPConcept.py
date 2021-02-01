@@ -3,26 +3,33 @@ print("Python using oops concept")
 class Dog:                                           # creating dog class
     species = "Animal"                               # class attributes
 
-    def __init__(self, name, age, breed, color ):
+    def __init__(self, name, age ):
         self.name = name                             # instance attributes
         self.age = age
-        self.breed = breed
-        self.color = color
 
-    def __str__(self):                              # instance method
+    def __str__(self):  # instance method
         return f"{self.name} is {self.age} years old"
 
     def speak(self, sound):
         return f"{self.name} says {sound}"
 
+class JackRussellTerrier(Dog):
+    pass
+
+class Dachshund(Dog):
+    pass
+
+class Bulldog(Dog):
+    pass
 
 
-misty = Dog("misty", 9, "Havanese", "white")                                 # object creation
-rocky = Dog("rocky", 6, "German Shepherd", "brown")                          # object creation
+misty = JackRussellTerrier("misty", 9)                                 # object creation
+rocky = Dachshund("rocky", 6)
+jeo = Bulldog("jeo", 3)
 
-age = misty.printAge()
-print(age)
-speaking =rocky.speak("bhow bhow")
-print(speaking)
 
-print(misty == rocky )                                                # two different objects (False)
+print(misty)
+print(rocky)
+print(jeo)
+sound = misty.speak("woof woof")
+print(sound)
