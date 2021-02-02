@@ -23,14 +23,12 @@ class Dachshund(Dog):
 class Bulldog(Dog):
     pass
 
-
 misty = JackRussellTerrier("misty", 9)                                 # object creation
 rocky = Dachshund("rocky", 6)
 jeo = Bulldog("jeo", 3)
 
 print(misty.speak("bhow bhow"))
 print(misty.speak())
-
 
 print(type(misty))
 print(isinstance(jeo, Dachshund))
